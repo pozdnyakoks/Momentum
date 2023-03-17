@@ -203,7 +203,7 @@ volumeCont.addEventListener('click', setVolume);
 const date = new Date();
 
 document.body.style.backgroundImage =
-  "url('https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/evening/18.jpg')";
+  "url('https://github.com/gentoosiast/momentum-backgrounds/blob/main/afternoon/01.webp')"
 
 
 function showTime() {
@@ -359,9 +359,9 @@ function setBg() {
     bgNum = bgNum.toString().padStart(2, 0);
   }
   tagsChoice.disabled = true;
-  img.src = `https://raw.githubusercontent.com/pozdnyakoks/momentum-backgrounds/main/${time}/${bgNum}.webp`;
+  img.src = `url('https://github.com/gentoosiast/momentum-backgrounds/blob/main/${time}/${bgNum}.webp')`;
   img.onload = () => {
-    document.body.style.backgroundImage = `url('https://raw.githubusercontent.com/pozdnyakoks/momentum-backgrounds/main/${time}/${bgNum}.webp')`;
+    document.body.style.backgroundImage = `url('https://github.com/gentoosiast/momentum-backgrounds/blob/main/${time}/${bgNum}.webp')`;
   };
 }
 
@@ -565,15 +565,3 @@ checkboxes.forEach((el, index) => {
   });
 });
 
-console.log(`Часы и календарь +15
-Приветствие +10
-Смена фонового изображения +20
-Виджет погоды +15
-Аудиоплеер +15
-Продвинутый аудиоплеер (реализуется без использования библиотек) +17
-(можно запустить и остановить проигрывания трека кликом по кнопке Play/Pause рядом с ним в плейлисте) - комментарий - кнопок play/pause рядом с треками нет, функционал есть 0 
-Перевод приложения на два языка (en/ru или en/be) +15
-Получение фонового изображения от API +10
-Настройки приложения +20
-Дополнительный функционал на выбор 0
-Итого 147`)
