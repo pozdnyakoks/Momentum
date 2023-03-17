@@ -359,9 +359,9 @@ function setBg() {
     bgNum = bgNum.toString().padStart(2, 0);
   }
   tagsChoice.disabled = true;
-  img.src = `https://github.com/gentoosiast/momentum-backgrounds/blob/main/${time}/${bgNum}.webp`;
+  img.src = `https://raw.githubusercontent.com/pozdnyakoks/momentum-backgrounds/main/${time}/${bgNum}.webp`;
   img.onload = () => {
-    document.body.style.backgroundImage = `url('https://github.com/gentoosiast/momentum-backgrounds/blob/main/${time}/${bgNum}.webp')`;
+    document.body.style.backgroundImage = `url('https://raw.githubusercontent.com/pozdnyakoks/momentum-backgrounds/main/${time}/${bgNum}.webp')`;
   };
 }
 
@@ -564,4 +564,3 @@ checkboxes.forEach((el, index) => {
     hideBlocks(el.value);
   });
 });
-
