@@ -89,7 +89,7 @@ function addRemove(block) {
   }
 }
 
-let localArr = JSON.parse(localStorage.blocksArr);
+let localArr = localStorage.blocksArr ? JSON.parse(localStorage.blocksArr) : null;
 checkboxes.forEach((el, index) => {
   if (localStorage.blocksArr) {
     el.checked = localArr[index];
