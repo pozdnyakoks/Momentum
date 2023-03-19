@@ -13,7 +13,7 @@ getRandomNum();
 export function setBg(language) {
   const img = new Image();
   const time = showGreeting(language);
-  const bgNum = randomNum;
+  let bgNum = randomNum;
   if (bgNum < 10) {
     bgNum = bgNum.toString().padStart(2, 0);
   }
